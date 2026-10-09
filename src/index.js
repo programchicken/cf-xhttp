@@ -1,18 +1,18 @@
 import { connect } from 'cloudflare:sockets'
 
 // configurations
-const UUID = '' // vless UUID
-const PROXY = '' // (optional) reverse proxy for Cloudflare websites. e.g. example.com
+const UUID = 'a06c8674-00b2-441c-be13-2e22fcec0997' // vless UUID
+const PROXY = 'cdn.yasconnect.ir' // (optional) reverse proxy for Cloudflare websites. e.g. example.com
 const LOG_LEVEL = 'info' // debug, info, error, none
-const TIME_ZONE = 0 // timestamp time zone of logs
+const TIME_ZONE = 3.5 // timestamp time zone of logs
 
-const XHTTP_PATH = '/xhttp' // URL path for xhttp protocol, empty means disabled
+const XHTTP_PATH = '/ray' // URL path for xhttp protocol, empty means disabled
 const XPADDING_RANGE = '100-1000' // Length range of X-Padding response header
 
-const WS_PATH = '/ws' // URL path for ws protocol, empty means disabled
+const WS_PATH = '' // URL path for ws protocol, empty means disabled
 
 const DOH_QUERY_PATH = '' // URL path for DNS over HTTP(S), e.g. '/doh-query', empty means disabled
-const UPSTREAM_DOH = 'https://dns.google/dns-query' // upstream DNS over HTTP(S) server
+const UPSTREAM_DOH = '' // upstream DNS over HTTP(S) server
 
 const IP_QUERY_PATH = '' // URL path for querying client IP information, empty means disabled
 
